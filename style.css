@@ -1,0 +1,136 @@
+body{
+    background-image: linear-gradient(to right, rgb(118, 184, 222) , rgb(185, 128, 173));
+    color: black;
+    margin: 2%;
+    margin-top: 10%;
+    font-size: 20px;
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h2{
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3{
+    font-size: 25px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+    font-size: 20px;
+    line-height: 150%;
+}
+
+img{
+    border: 5px solid rgb(106, 201, 160);
+    padding: 5px;
+    border-top-right-radius: 20px 20px;
+    border-bottom-left-radius: 20px 20px;
+}
+
+video{
+    border: 5px solid rgb(106, 201, 160);
+    padding: 5px;
+    border-top-right-radius: 20px 20px;
+    border-bottom-left-radius: 20px 20px;
+}
+
+li{
+    font-size: 20px;
+}
+
+nav li{
+    font-size: 20px;
+    display: inline;
+}
+
+nav ul{
+    border: 5px ridge rgb(198, 88, 156);
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+nav{
+    text-align:left;
+}
+
+hr{
+   border: 1px solid rgb(106, 201, 160);
+}
+
+#skip{
+    position:absolute;
+    top: -500px;
+}
+
+#skip:focus{
+    top:10px;
+}
+
+*:focus {
+    border: 3px solid black;
+}
+
+.title{
+    text-align: center;
+}
+
+.main_img{
+    display: block;
+    margin: auto;
+    width: 400px;
+}
+
+.sub_img{
+    width: 200px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 5px;
+    align-content: space-evenly;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+ }
+ 
+ @media (prefers-reduced-motion: reduce) {
+    #gif-image {
+       visibility: hidden;
+    }
+    
+    #static-image {
+       display: block;
+    }
+ }
+
+ @media screen and (min-width: 1000px) {
+    body {
+       text-align: left;
+       margin: 3%;
+    }
+ 
+    .grid {
+       width: 90%;
+       margin: auto;
+       display: grid;
+       grid-template-columns: 20% 20%;
+       grid-gap: 10px;
+       justify-content: space-around;
+    }
+ }
